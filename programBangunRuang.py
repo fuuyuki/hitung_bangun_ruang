@@ -63,7 +63,7 @@ def cetakMenuHitung():
             print("Pilih angka yang tersedia!")
 
 def hitungLuasPermukaan(brg):
-##    if brg == '1'
+	if brg == 1:
     if brg == 2:
         p = int(input("Masukkan nilai panjang = "))
         l = int(input("Masukkan nilai lebar = "))
@@ -71,12 +71,12 @@ def hitungLuasPermukaan(brg):
         lpBalok = (2*p*l) + (2*p*t) + (2*l*t)
         print("Luas Permukaan Balok = ")
         print(int(lpBalok))
-##    elif brg == '3'
-##    elif brg == '4'
-##    elif brg == '5'
+	elif brg == 3:
+	elif brg == 4:
+	elif brg == 5:
 
 def hitungVolume(brg):
-##    if brg == '1'
+	if brg == 1:
     if brg == 2:
         p = int(input("Masukkan nilai panjang = "))
         l = int(input("Masukkan nilai lebar = "))
@@ -84,9 +84,9 @@ def hitungVolume(brg):
         volBalok = p*l*t
         print("Volume Balok = ")
         print(int(volBalok))
-##    elif brg == '3'
-##    elif brg == '4'
-##    elif brg == '5'
+	elif brg == 3:
+	elif brg == 4:
+	elif brg == 5:
 
 ## Execute
 cetakMenuAwal()
