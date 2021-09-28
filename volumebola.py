@@ -1,0 +1,5 @@
+print ("--- Volume Bola ---\n")
+r=int(input("Masukan Jari-jari Bola : "))
+phi=(22/7)
+v=int((4/3)*phi*(r*r*r))
+print ("Volume Bola = ", v)
