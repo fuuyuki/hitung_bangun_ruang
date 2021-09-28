@@ -53,17 +53,21 @@ def cetakMenuHitung():
         print("======================================")
         selection = input("Masukan pilihan : ")
         # Loop Menu Hitung
-        if selection == '1':
-            hitungLuasPermukaan(2)
+        if selection == '2':
+            hitungLuasPermukaan(bR)
             break
         elif selection == '2':
-            hitungVolume(2)
+            hitungVolume(bR)
             break
         else:
             print("Pilih angka yang tersedia!")
 
 def hitungLuasPermukaan(brg):
-	if brg == 1:
+    if brg == 1:
+        rusukKubus = float(input("Masukan Nilai Rusuk Kubus (CM)= "))
+        LPKubus = 6 * (rusukKubus * rusukKubus)
+        print("Nilai Luas Permukaan Kubus= ", LPKubus, "CM")
+
     if brg == 2:
         p = int(input("Masukkan nilai panjang = "))
         l = int(input("Masukkan nilai lebar = "))
@@ -76,7 +80,11 @@ def hitungLuasPermukaan(brg):
 	elif brg == 5:
 
 def hitungVolume(brg):
-	if brg == 1:
+    if brg == 1:
+        rusukKubus = float(input("Masukan Nilai Rusuk Kubus (CM)= "))
+        volumeKubus = rusukKubus * rusukKubus * rusukKubus
+        print("Nilai Volume Kubus= ", volumeKubus, "CM")
+        
     if brg == 2:
         p = int(input("Masukkan nilai panjang = "))
         l = int(input("Masukkan nilai lebar = "))
