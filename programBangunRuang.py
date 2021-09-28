@@ -82,7 +82,6 @@ def hitungLuasPermukaan(brg):
         lpTabung = math.pi*2*r*(r+t)
         print("Luas Permukaan Tabung = ", lpTabung)
 	elif brg == 4:
-	elif brg == 5:
 
 def hitungVolume(brg):
     if brg == 1:
@@ -103,7 +102,6 @@ def hitungVolume(brg):
         volTabung = math.pi*r*r*t
         print("Volume Tabung = ", volTabung)
 	elif brg == 4:
-	elif brg == 5:
 
 ## Execute
 cetakMenuAwal()
