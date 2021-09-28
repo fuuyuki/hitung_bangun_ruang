@@ -76,6 +76,10 @@ def hitungLuasPermukaan(brg):
         print("Luas Permukaan Balok = ")
         print(int(lpBalok))
 	elif brg == 3:
+        r = float(input("Jari - Jari Tabung = "))
+        t = float(input("Tinggi Tabung"))
+        lpTabung = math.pi*2*r*(r+t)
+        print("Luas Permukaan Tabung = ", lpTabung)
 	elif brg == 4:
 	elif brg == 5:
 
@@ -93,6 +97,10 @@ def hitungVolume(brg):
         print("Volume Balok = ")
         print(int(volBalok))
 	elif brg == 3:
+        r = float(input("Jari - Jari Tabung = "))
+        t = float(input("Tinggi Tabung"))
+        volTabung = math.pi*r*r*t
+        print("Volume Tabung = ", volTabung)
 	elif brg == 4:
 	elif brg == 5:
 
