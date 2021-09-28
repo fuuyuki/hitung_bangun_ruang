@@ -1,5 +1,5 @@
 from time import sleep
-import math
+
 menuA = {}
 menuA['== 1.']="Kubus"
 menuA['== 2.']="Balok"
@@ -54,39 +54,77 @@ def cetakMenuHitung():
         print("======================================")
         selection = input("Masukan pilihan : ")
         # Loop Menu Hitung
-        if selection == '1':
-            hitungLuasPermukaan(2)
+        if selection == '2':
+            hitungLuasPermukaan(bR)
             break
         elif selection == '2':
-            hitungVolume(2)
+            hitungVolume(bR)
             break
         else:
             print("Pilih angka yang tersedia!")
 
 def hitungLuasPermukaan(brg):
-##    if brg == '1'
-    if brg == 2:
+    if brg == 1:
+        rusukKubus = float(input("Masukan Nilai Rusuk Kubus (CM)= "))
+        LPKubus = 6 * (rusukKubus * rusukKubus)
+        print("Nilai Luas Permukaan Kubus= ", LPKubus, "CM")
+
+    elif brg == 2:
         p = int(input("Masukkan nilai panjang = "))
         l = int(input("Masukkan nilai lebar = "))
         t = int(input("Masukkan nilai tinggi = "))
         lpBalok = (2*p*l) + (2*p*t) + (2*l*t)
         print("Luas Permukaan Balok = ")
         print(int(lpBalok))
-##    elif brg == '3'
-##    elif brg == '4'
+
+    elif brg == 3:
+        r = float(input("Jari - Jari Tabung = "))
+        t = float(input("Tinggi Tabung"))
+        lpTabung = math.pi*2*r*(r+t)
+        print("Luas Permukaan Tabung = ", lpTabung)
+
+    elif brg == 4:
+        import math
+        print ("--- Program Menghitung Luas Permukaan Kerucut ---\n")
+        t=int(input("Masukan Tinggi (cm) : "))
+        r=int(input("Masukan Jari-jari Lingkarang (cm) : "))
+        phi=22/7
+        s=math.sqrt((r*r)+(t*t))
+        lpkerucut=int(phi*r*(r+s))
+        print ("Luas Kerucut = ", lpkerucut,"cm^2")
+
 ##    elif brg == '5'
 
 def hitungVolume(brg):
-##    if brg == '1'
-    if brg == 2:
+    if brg == 1:
+        rusukKubus = float(input("Masukan Nilai Rusuk Kubus (CM)= "))
+        volumeKubus = rusukKubus * rusukKubus * rusukKubus
+        print("Nilai Volume Kubus= ", volumeKubus, "CM")
+        
+    elif brg == 2:
         p = int(input("Masukkan nilai panjang = "))
         l = int(input("Masukkan nilai lebar = "))
         t = int(input("Masukkan nilai tinggi = "))
         volBalok = p*l*t
         print("Volume Balok = ")
         print(int(volBalok))
-##    elif brg == '3'
-##    elif brg == '4'
+
+    
+    elif brg == 3:
+        r = float(input("Jari - Jari Tabung = "))
+        t = float(input("Tinggi Tabung"))
+        volTabung = math.pi*r*r*t
+        print("Volume Tabung = ", volTabung)
+     
+    elif brg == 4:
+         import math
+         print ("--- Program Menghitung Volume Kerucut ---\n")
+         t=int(input("Masukan Tinggi (cm) : "))
+         r=int(input("Masukan Jari-jari Lingkarang (cm) : "))
+         phi=22/7
+         vkerucut=int((1/3)*phi*(r*r)*t)
+         print ("Volume Kerucut = ", vkerucut,"cm^3")
+
 ##    elif brg == '5'
 
 ## Execute
