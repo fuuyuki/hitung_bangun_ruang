@@ -76,9 +76,9 @@ def hitungLuasPermukaan(brg):
         lpBalok = (2*p*l) + (2*p*t) + (2*l*t)
         print("Luas Permukaan Balok = ")
         print(int(lpBalok))
-	elif brg == 3:
+	if brg == 3:
         r = float(input("Jari - Jari Tabung = "))
-        t = float(input("Tinggi Tabung"))
+        t = float(input("Tinggi Tabung = "))
         lpTabung = math.pi*2*r*(r+t)
         print("Luas Permukaan Tabung = ", lpTabung)
 	elif brg == 4:
