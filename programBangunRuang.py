@@ -1,4 +1,5 @@
 from time import sleep
+import math
 menuA = {}
 menuA['== 1.']="Kubus"
 menuA['== 2.']="Balok"
