@@ -76,12 +76,14 @@ def hitungLuasPermukaan(brg):
         lpBalok = (2*p*l) + (2*p*t) + (2*l*t)
         print("Luas Permukaan Balok = ")
         print(int(lpBalok))
-	elif brg == 3:
+    
+    elif brg == 3:
         r = float(input("Jari - Jari Tabung = "))
         t = float(input("Tinggi Tabung = "))
         lpTabung = math.pi*2*r*(r+t)
         print("Luas Permukaan Tabung = ", lpTabung)
-	elif brg == 4:
+    
+    elif brg == 4:
         print ("--- Program Menghitung Luas Permukaan Kerucut ---\n")
         t=int(input("Masukan Tinggi (cm) : "))
         r=int(input("Masukan Jari-jari Lingkarang (cm) : "))
@@ -103,14 +105,14 @@ def hitungVolume(brg):
         volBalok = p*l*t
         print("Volume Balok = ")
         print(int(volBalok))
-
-	elif brg == 3:
+    
+    elif brg == 3:
         r = float(input("Jari - Jari Tabung = "))
         t = float(input("Tinggi Tabung"))
         volTabung = math.pi*r*r*t
         print("Volume Tabung = ", volTabung)
-
-	elif brg == 4:
+        
+    elif brg == 4:
         print ("--- Program Menghitung Volume Kerucut ---\n")
         t=int(input("Masukan Tinggi (cm) : "))
         r=int(input("Masukan Jari-jari Lingkarang (cm) : "))
